@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicXML To MIDI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="verovio-toolkit.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chuyển MusicXML Sang MIDI</h1>
+            <p>Tải Lên File MusicXML (.musicxml Hoặc .xml)</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <input type="file" id="xmlFile" accept=".musicxml,.xml">
+                <label for="xmlFile" class="upload-btn">Chọn File MusicXML</label>
+                <span id="fileName">Chưa Chọn File</span>
+            </div>
+
+            <div id="sheetMusicContainer" class="hidden">
+                <h2>Bản Sheet Của Bạn:</h2>
+                <div id="notationViewer"></div>
+                <button id="convertBtn" class="convert-btn" disabled>
+                    Chọn Thực Hiện Chuyển Midi
+                </button>
+            </div>
+
+            <div id="statusMessage" class="status-message hidden"></div>
+        </main>
+
+        <footer>
+            <p>Thiết Kế Trần Cường</br>Zalo:0907860662</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
